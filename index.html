@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://i.imgur.com/IzlK3pZ.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title> Archive LTC </title>
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+      } else {
+          document.documentElement.classList.remove('dark')
+      }
+  </script>
+  </head>
+  <body>    
+    <script type="module" src="/src/main.ts"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+    <!--<div class="cursor_genshin_auto"> --> 
+    <div class="dark:bg-slate-800 bg-white bg-fixed bg-cover bg-center bg-no-repeat min-h-screen overflow-hidden">
+    <div id="app"></div>
+    <script src="./src/ToogleDark.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+      <!--</div> --> 
+      </div>
+  </body>
+</html>
+
